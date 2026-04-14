@@ -1,0 +1,136 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #333;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav a:hover {
+    color: yellow;
+}
+.about {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+img {
+    width: 250px; 
+    border: 3px solid black;
+    border-radius: 50%;
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.bio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1em;
+    padding: 1em;
+    max-width: 500px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.grid div {
+    background-color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+ul, ol {
+    list-style: none;
+    margin: 1rem;
+    color: #333;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border: 2px solid black;
+ border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: lightgray;
+}
+form {
+    margin: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkblue;
+}
+iframe {
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+}
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    img {
+        width: 60%; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
